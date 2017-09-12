@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Free xhtml template - minimalistic-design.com</title>	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+
+	<div id="page">
+
+		<div id="header">
+		<h1><a href="#">DiffTrajectory</a></h1>
+			<h2> Differentially private trajectory analysis for points-of-interest recommendation</h2>
+		</div>
+
+		<div id="wrapper">
+
+			<div id="content">
+
+				<h2>Overview</h2>
+				<div id="index_image">
+					<img src="figures/index_figure_200.jpg" alt="index_image" />
+				</div>
+				<b><big>DiffTrajectory</big></b> is a differentially private trajectory analysis algorithm for points-of-interest recommendation to users that aims at maximizing the accuracy of the recommendation results while protecting the privacy of the exposed trajectories with differential privacy guarantees.
+				<br /><br />
+				DiffTrajectory can both:
+				<ul>
+					<li>Do points-of-interest recommendation by analyzing the trajectory dataset.</li>
+					<li>Protect the privacy of the exposed trajectories with differential privacy guarantees.</li>
+
+				</ul> 
+				<br /><br />
+				
+				<h2>Motivation</h2> 
+				<div id="threat">
+					<img src="figures/threat.jpg" alt="threat" />
+				</div>
+				<p>
+				Trajectory-based travel recommendation:
+				<ul>
+					<li> Trajectories of an individual mobile user can be analyzed to understand her personal travel recommendations. The mobile users implicitly recommend their visited places to the new visitors.</li>
+					<li>Aggregate analysis of historical trajectory data belonging to different mobile users can provide more generalized travel recommendations.</li>
+				</ul>	
+
+				
+				Privacy threats：<br />
+				Location information of the travel destination is often associated with a semantic meaning. The disclosure of the association between a mobile user and such a location may reveal private information such as the health conditions.
+	
+				</p>
+
+				<br /><br />
+				
+				
+				<h2>Algorithm</h2> 
+				<p>
+					First phase: User-location bipartite graph representation:
+					<ul>
+						<li>Raw trajectory dataset.</li>
+						<li>Stop points detection.</li>
+						<li>Stop points clustering.</li>
+						<li>Association construction.</li>
+						<li>Bipartite graph.</li>
+					</ul>
+				</p>
+				<div id="algorithm1">
+					<img src="figures/algorithm1.jpg" alt="algorithm1" />
+				</div>
+				<p>
+					Second phase: Differentially private mining algorithm:
+					<ul>
+						<li>Matrix construction.</li>
+						<li>Noise addition.</li>
+						<li>Noise suppression.</li>
+						<li>Hyperlink-Induced Topic Search (HITS).</li>
+					</ul>
+				</p>
+				<div id="algorithm2">
+					<img src="figures/algorithm2.jpg" alt="algorithm2" />
+				</div>
+
+
+				<br /><br />
+				<br /><br />
+				<br /><br />
+				<br /><br />
+
+				<h2 id="publications">Publications</h2> 
+				<ul>
+					<li>Chao Li, Balaji Palanisamy and James Joshi, "Differentially Private Trajectory Analysis for Points-of-Interest Recommendation", Proc. of 6th IEEE International Congress on Big Data (<b>BigData Congress 2017</b>), Honolulu, USA. (<b>Best Paper Award</b>). [<a href="http://www.sis.pitt.edu/bpalan/papers/trajectory-bigdatacongress-2017.pdf">PDF</a>]</li>
+				</ul>
+				
+
+			</div>
+
+			<div id="sidebar"> 
+
+				<h2>Menu Navigation</h2>
+
+				<ul>
+					<li><a href="index.html">Overview</a></li> 
+					<li><a href="downloads.html">Downloads</a></li> 
+					<li><a href="people.html">People</a></li> 
+					<li><a href="index.html#publications">Publications</a></li>
+				</ul>
+
+				<h2>Useful Resources</h2>
+
+				<ul>
+					<li><a href="https://www.microsoft.com/en-us/research/project/geolife-building-social-networks-using-human-location-history/">Datasets: Geolife</a></li>  
+				</ul>
+
+			</div>
+
+			<div style="clear: both;"> </div>
+
+		</div>
+
+		<div id="footer">
+			<p>
+				Design by <a href="http://www.minimalistic-design.com">Minimalistic Design</a>
+			</p>
+		</div>
+
+	</div>
+
+
+</body>
+
+</html>
+
