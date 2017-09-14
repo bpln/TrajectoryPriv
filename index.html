@@ -22,12 +22,15 @@
 				<div id="index_image">
 					<img src="figures/index_figure_200.jpg" alt="index_image" />
 				</div>
-				<b><big>DiffTrajectory</big></b> is a differentially private trajectory analysis algorithm for points-of-interest recommendation to users that aims at maximizing the accuracy of the recommendation results while protecting the privacy of the exposed trajectories with differential privacy guarantees.
+				<b><big>DiffTrajectory</big></b> is a differentially private trajectory analysis technique for 
+				points-of-interest recommendation to users that aims at maximizing the accuracy of the
+				recommendation results while protecting the privacy of the exposed trajectories 
+				with differential privacy guarantees.
 				<br /><br />
-				DiffTrajectory can both:
+				DiffTrajectory can perform both:
 				<ul>
-					<li>Do points-of-interest recommendation by analyzing the trajectory dataset.</li>
-					<li>Protect the privacy of the exposed trajectories with differential privacy guarantees.</li>
+					<li>Points-of-interest recommendation by analyzing the underlying trajectory training data.</li>
+					<li>Protect the privacy of the trajectories with rigorous differential privacy guarantees.</li>
 
 				</ul> 
 				<br /><br />
@@ -39,13 +42,17 @@
 				<p>
 				Trajectory-based travel recommendation:
 				<ul>
-					<li> Trajectories of an individual mobile user can be analyzed to understand her personal travel recommendations. The mobile users implicitly recommend their visited places to the new visitors.</li>
-					<li>Aggregate analysis of historical trajectory data belonging to different mobile users can provide more generalized travel recommendations.</li>
+					<li>Trajectories of individual mobile users can be analyzed to understand travel behavior and make personalized personal 
+						travel recommendations. The mobile users implicitly recommend their visited places to the new visitors.</li>
+					<li>Aggregate analysis of historical trajectory data belonging to different mobile users can provide
+						more generalized travel recommendations.</li>
 				</ul>	
 
 				
 				Privacy threats：<br />
-				Location information of the travel destination is often associated with a semantic meaning. The disclosure of the association between a mobile user and such a location may reveal private information such as the health conditions.
+				Location information of the travel destination is often associated with a semantic meaning. 
+				The disclosure of the association between a mobile user and a location may reveal private
+				information such as the user's health condition.
 	
 				</p>
 
@@ -54,7 +61,7 @@
 				
 				<h2>Algorithm</h2> 
 				<p>
-					First phase: User-location bipartite graph representation:
+					Phase I: User-location bipartite graph representation:
 					<ul>
 						<li>Raw trajectory dataset.</li>
 						<li>Stop points detection.</li>
@@ -67,7 +74,7 @@
 					<img src="figures/algorithm1.jpg" alt="algorithm1" />
 				</div>
 				<p>
-					Second phase: Differentially private mining algorithm:
+					Phase II: Differentially private data mining:
 					<ul>
 						<li>Matrix construction.</li>
 						<li>Noise addition.</li>
@@ -118,7 +125,7 @@
 
 		<div id="footer">
 			<p>
-				Design by <a href="http://www.minimalistic-design.com">Minimalistic Design</a>
+				
 			</p>
 		</div>
 
